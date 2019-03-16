@@ -41,10 +41,10 @@
 		},
 		computed: {
 			team(){
-				return this.$store.state.teams.all.find(team => team.id === this.id);
+				return this.$store.state.teams.all.find(team => team.id === this.$route.params.id);
 			},
 			otherTeams(){
-				return this.$store.state.teams.all.filter(team => team.id !== this.id);
+				return this.$store.state.teams.all.filter(team => team.id !== this.$route.params.id);
 			}
 		}
 	}

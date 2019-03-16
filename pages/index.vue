@@ -13,7 +13,7 @@
 </template>
 
 <script>
-
+import {mapState} from 'vuex';
 export default {
   head(){
     return {
@@ -21,9 +21,9 @@ export default {
     }
   },
   computed: {
-    teams(){
-      return this.$store.state.teams.all
-    }
+    ...mapState({
+      teams: state => state.teams.all, 
+    })
   }
 }
 </script>

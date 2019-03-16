@@ -106,4 +106,4 @@ export const state = () => ({
 						website: 'https://www.asroma.com/',
 					}
 				]
-})
+});

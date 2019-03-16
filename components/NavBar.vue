@@ -1,7 +1,7 @@
 <template>
 	<div class="navbar">
 		<nuxt-link :to="{name: 'index'}" title="Home">
-			<img src="/images/home-icon.png" height="56" width="56" alt="ball"/>
+			<img src="/images/home-icon.png" height="56" width="56" alt="home-icon"/>
 		</nuxt-link>
 		<span class="navbar-title">football teams</span>
 	</div>

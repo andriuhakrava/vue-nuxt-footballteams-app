@@ -3,7 +3,20 @@ const pkg = require('./package')
 
 module.exports = {
   mode: 'universal',
-
+  generate: {
+    routes: [
+      '/teams/bay',
+      '/teams/juv',
+      '/teams/liv',
+      '/teams/manun',
+      '/teams/sev',
+      '/teams/realmad',
+      '/teams/ars',
+      '/teams/barc',
+      '/teams/mal',
+      '/teams/rom'
+    ]
+  },
   /*
   ** Headers of the page
   */
@@ -41,6 +54,7 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
+  
   ],
 
   /*
